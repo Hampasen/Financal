@@ -170,11 +170,10 @@ body p {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100%;
   width: 85%;
   border-radius: 0.5em;
   margin: 10em 0 0 0;
-  padding-bottom: 2em;
+  padding-bottom: 5em;
 }
 .container-info .info-card .card-container h4 {
   text-align: center;
@@ -193,8 +192,7 @@ body p {
   justify-content: center;
   align-items: flex-end;
   width: 90%;
-  height: 70%;
-  margin-top: -5em;
+  margin-top: -3em;
 }
 .container-info .info-card .card-container .card-image { /* Cardimage code and position*/
   padding: 1em 0 0 0;
@@ -227,11 +225,11 @@ body p {
 
 /* LARGE SCREENS */
 @media screen and (min-width: 768px) {
-  .card-container {
-    width: 85%;
-  }
   .container-info {
     padding: 8em;
+    position: relative;
+    min-height: 35em;
+    padding-bottom: 30em;
   }
   .container-info .maininfo-wrapper {
     display: flex;
@@ -247,8 +245,8 @@ body p {
   }
   .container-info .card-wrapper { /* container to wrap the cards */
     display: flex;
-    position: relative;
-    top: 10em;
+    position: absolute;
+    bottom: -13em;
   }
   .info-aboutus {
     padding: 20em 30% 7em 30%;

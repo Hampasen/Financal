@@ -15,16 +15,17 @@
         .info-card{ /* contains all cards for wrapping */
             display: flex;
             justify-content: center;
+            
             .card-container{ /* code for the whitecard */
                 background-color: white;
                 display: flex;
                 align-items: center;
                 flex-direction: column;
-                height: 100%;
                 width:  85%;
                 border-radius: .5em;
                 margin: 10em 0 0 0;
-                padding-bottom: 2em;
+                padding-bottom: 5em;
+                
                 h4{
                     text-align: center;
                     margin: .4em 0 0em 0;
@@ -44,8 +45,8 @@
                     justify-content: center;
                     align-items: flex-end;
                     width: 90%;
-                    height: 70%;
-                    margin-top: -5em;
+                              
+                    margin-top: -3em;
                 }
                 .card-image{ /* Cardimage code and position*/
                     padding: 1em 0 0 0;
@@ -85,11 +86,12 @@
 /* LARGE SCREENS */
 @media screen and (min-width: 768px){
 
-    .card-container{
-        width: 85%;
-    }
+  
     .container-info{
-        padding: 8em;
+        padding: 8em; 
+       position: relative;
+       min-height: 35em;
+       padding-bottom: 30em;
         .maininfo-wrapper{
             display: flex;
             justify-content: space-between;
@@ -106,8 +108,8 @@
         }
         .card-wrapper{ /* container to wrap the cards */
             display: flex;
-            position: relative;
-            top:10em;
+            position: absolute;
+            bottom: -13em;
         }
 
     }
