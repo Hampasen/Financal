@@ -1,0 +1,132 @@
+@use "../abstracts/variables" as *;
+
+
+
+.container-info{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 1.5em 3em 1.5em;
+    background-color: $lightgrey-clr;
+    h2{
+        margin-bottom: 1em;
+        color: white;
+    }
+
+    /* contains all cards for wrapping */
+    .info-card{ 
+
+        display: flex;
+        justify-content: center;
+
+        /* code for the whitecard */
+        .card-container{ 
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-bottom: 2em;
+            margin: 10em 0 0 0;
+            width:  85%;
+            border-radius: .5em;
+            background-color: white;
+            h4{
+                padding: .5em 0 .5em 0;
+                margin: .4em 0 0em 0;
+                text-align: center;
+            }
+            p{
+                margin: 0 1em 0 1em;
+                text-align: center;
+                font-size: 1rem;
+                font-weight: 550;
+            }
+            
+            .container-background{ /* code for the background of the avatars*/
+
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                margin-top: -5em;
+                width: 90%;
+                border-radius: .5em;
+            }
+            .card-image{ /* Cardimage code and position*/
+
+                padding: 1em 0 0 0;
+                max-width: 80%;
+                max-height: 90%;
+                bottom: 0;
+            }
+            .child-card{
+                background-color: $lightblue-clr;
+            }
+            .adult-card{
+                background-color: $yellow-clr;
+            }
+            .old-card{
+                background-color: $darkorange-clr;
+            }
+        
+        }
+    }    
+
+
+        
+}
+.info-aboutus{
+
+    background-color: $yellow-clr;
+    text-align: center;
+    padding: 6em 3em 6em 3em;
+    h2{
+        margin-bottom: 1em;
+        color: white;
+    }
+    p{
+        padding-bottom: 2em;
+    }
+}
+/* LARGE SCREENS */
+@media screen and (min-width: 768px){
+
+    .card-container {
+        min-width: 200px;
+    }
+    
+    .container-info{
+
+        padding: 5em;
+        padding-bottom: 15em;
+        height: 30em;
+        
+
+        .maininfo-wrapper{
+
+            display: flex;
+            justify-content: space-between;
+
+            .info-description{
+
+                display: flex;
+                flex-direction: column;
+                flex: 0 1 40%;
+                }
+                p{
+                    flex: 0 1 30%;
+                }
+            
+        }
+        .card-wrapper{ /* container to wrap the cards */
+
+            display: flex;
+            position: relative;
+            padding: 0 5em 0 5em;
+        }
+
+    }
+    .info-aboutus{
+        padding: 20em 30% 7em 30%;
+    }
+}

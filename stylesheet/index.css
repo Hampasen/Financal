@@ -1,0 +1,419 @@
+/* Pre-made variables */
+body {
+  /* default values for fonts et.c*/
+}
+body h1 {
+  font-size: 3.5rem;
+  font-weight: 1000;
+  font-family: "Frank Ruhl Libre", serif;
+}
+body h2 {
+  font-size: 3.1rem;
+  font-weight: 700;
+}
+body h3 {
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+body h4 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+body p {
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1.5em;
+  font-weight: 600;
+  color: rgb(73, 73, 73);
+}
+body a {
+  text-decoration: none;
+  color: white;
+  transition: 0.8s;
+}
+
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1.5rem;
+  }
+}
+/* Code for left column in header */
+.header-title {
+  background-color: #C7DDEA;
+  padding: 2em 2em 0 2em;
+}
+.header-title h1 {
+  margin-bottom: 0.5em;
+}
+.header-title p:after {
+  color: white;
+  content: "$0.4 per day";
+}
+.header-title .header-img {
+  max-width: 85%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Code for right columns in header */
+.info-learnmore, .info-jointoday {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  color: white;
+}
+.info-learnmore p, .info-jointoday p {
+  font-size: 0.9rem;
+}
+
+.info-learnmore {
+  background-color: #F17949;
+}
+
+.info-jointoday {
+  background-color: #FAB131;
+}
+
+/* LARGE SCREENS */
+@media screen and (min-width: 768px) {
+  /* Code for left column in header */
+  .page-header {
+    display: flex;
+  }
+  .page-header .header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1 1 50%;
+    padding: 4em 0 0 4em;
+  }
+  .page-header .header-title p {
+    margin: 0 40% 0 0;
+  }
+  .page-header .header-title .header-img-container {
+    justify-content: flex-end;
+  }
+  .info-wrapper { /* Wraps the right columns in header*/
+    flex: 1 1 50%;
+    /* Code for right columns in header */
+  }
+  .info-wrapper .info-learnmore, .info-wrapper .info-jointoday {
+    height: 50%;
+  }
+  .info-wrapper .info-learnmore a, .info-wrapper .info-jointoday a {
+    transition: 0.8s;
+  }
+  .info-wrapper .info-learnmore a:hover, .info-wrapper .info-jointoday a:hover {
+    scale: 150%;
+    transition: 0.8s;
+  }
+}
+/* Code for NAV */
+.page-nav .nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.page-nav .nav-list li {
+  width: 50%;
+  text-align: center;
+}
+.page-nav .nav-list li a {
+  padding: 1.5em 0 1.5em 0;
+  display: block;
+  white-space: nowrap;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-family: "Fira Sans", sans-serif;
+  color: #A9A19E;
+}
+.page-nav .nav-list li:active {
+  background-color: rgb(230, 230, 230);
+  color: rgb(46, 46, 46);
+}
+
+/* LARGE SCREENS */
+@media screen and (min-width: 768px) {
+  .page-nav {
+    margin: 0 auto;
+    width: 75%;
+  }
+  .page-nav .nav-list {
+    flex-wrap: nowrap;
+  }
+  .page-nav .nav-list li {
+    width: 25%;
+  }
+  .page-nav .nav-list li:hover {
+    background-color: rgb(238, 238, 238);
+    transition: 0.8s;
+  }
+  .page-nav .nav-list li:hover a {
+    color: rgb(0, 0, 0);
+  }
+  .page-nav .nav-list li:active {
+    filter: brightness(80%);
+  }
+}
+.container-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4em 1.5em 3em 1.5em;
+  background-color: #A9A19E;
+  /* contains all cards for wrapping */
+}
+.container-info h2 {
+  margin-bottom: 1em;
+  color: white;
+}
+.container-info .info-card {
+  display: flex;
+  justify-content: center;
+  /* code for the whitecard */
+}
+.container-info .info-card .card-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 2em;
+  margin: 10em 0 0 0;
+  width: 85%;
+  border-radius: 0.5em;
+  background-color: white;
+}
+.container-info .info-card .card-container h4 {
+  padding: 0.5em 0 0.5em 0;
+  margin: 0.4em 0 0em 0;
+  text-align: center;
+}
+.container-info .info-card .card-container p {
+  margin: 0 1em 0 1em;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 550;
+}
+.container-info .info-card .card-container .container-background { /* code for the background of the avatars*/
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: -5em;
+  width: 90%;
+  border-radius: 0.5em;
+}
+.container-info .info-card .card-container .card-image { /* Cardimage code and position*/
+  padding: 1em 0 0 0;
+  max-width: 80%;
+  max-height: 90%;
+  bottom: 0;
+}
+.container-info .info-card .card-container .child-card {
+  background-color: #C7DDEA;
+}
+.container-info .info-card .card-container .adult-card {
+  background-color: #FAB131;
+}
+.container-info .info-card .card-container .old-card {
+  background-color: #F17949;
+}
+
+.info-aboutus {
+  background-color: #FAB131;
+  text-align: center;
+  padding: 6em 3em 6em 3em;
+}
+.info-aboutus h2 {
+  margin-bottom: 1em;
+  color: white;
+}
+.info-aboutus p {
+  padding-bottom: 2em;
+}
+
+/* LARGE SCREENS */
+@media screen and (min-width: 768px) {
+  .card-container {
+    min-width: 200px;
+  }
+  .container-info {
+    padding: 5em;
+    padding-bottom: 15em;
+    height: 30em;
+  }
+  .container-info .maininfo-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container-info .maininfo-wrapper .info-description {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 40%;
+  }
+  .container-info .maininfo-wrapper p {
+    flex: 0 1 30%;
+  }
+  .container-info .card-wrapper { /* container to wrap the cards */
+    display: flex;
+    position: relative;
+    padding: 0 5em 0 5em;
+  }
+  .info-aboutus {
+    padding: 20em 30% 7em 30%;
+  }
+}
+.infographic-table { /* Wrapper for columns at bottom */
+  /* general code for all columns */
+  /* Code for the first column */
+  /* Sets the position and variables for the number in the upper-left corner */
+  /* individual code for every column */
+}
+.infographic-table .table {
+  position: relative;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3em 0 3em;
+  height: 250px;
+  font-size: 1.6rem;
+}
+.infographic-table .table-howitworks {
+  background-color: #C7DDEA;
+  font-size: 2.5rem;
+}
+.infographic-table .table-1::before, .infographic-table .table-2::before, .infographic-table .table-3::before,
+.infographic-table .table-4::before, .infographic-table .table-5::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(153, 153, 153);
+}
+.infographic-table .table-1::before {
+  content: "01";
+}
+.infographic-table .table-2::before {
+  content: "02";
+}
+.infographic-table .table-2 {
+  background-color: rgb(223, 223, 223);
+}
+.infographic-table .table-3::before {
+  content: "03";
+}
+.infographic-table .table-4 {
+  background-color: #F17949;
+}
+.infographic-table .table-4 p {
+  color: rgb(54, 54, 54);
+}
+.infographic-table .table-4::before {
+  content: "04";
+  color: rgb(50, 0, 0);
+  opacity: 50%;
+}
+.infographic-table .table-5::before {
+  content: "05";
+}
+
+/* LARGE SCREENS */
+@media screen and (min-width: 768px) {
+  .infographic-table { /* wrapper for the columns */
+    display: flex;
+    flex-wrap: wrap;
+    /* general code for all columns */
+  }
+  .infographic-table .table {
+    padding: 0;
+    flex: 0 0 33.333333%;
+    height: 350px;
+  }
+  .infographic-table .table p {
+    margin: 0 2em 0 2em;
+  }
+}
+.page-footer {
+  height: 200px;
+  background-color: rgb(95, 95, 95);
+}
+.page-footer a {
+  padding: 0.5em 0 1em 0;
+  display: block;
+  text-align: center;
+  background-color: #A9A19E;
+  font-family: "Fira Sans", sans-serif;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 550;
+  color: rgb(51, 51, 51);
+}
+.page-footer .up-triangle {
+  margin-bottom: -0.4rem;
+  font-size: 1em;
+}
+
+/* code for all buttons */
+.button-style {
+  margin: 3em 1em 3em 0em;
+  width: 13em;
+  height: 4em;
+  border: none;
+  border-radius: 3em;
+  box-shadow: 0 2px 2px rgb(184, 183, 183);
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  transition: 0.8s;
+}
+
+.button-style:active {
+  opacity: 80%;
+  box-shadow: 0 0 10px thistle;
+}
+
+/* De-activates the second "join-now" button in mobile-form*/
+.info-btn {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .info-btn {
+    display: block;
+  }
+  /* Code for Button on header (front page)*/
+  .header-img-container {
+    position: relative;
+  }
+  .header-img-container .header-button {
+    position: absolute;
+    left: 0em;
+    bottom: 60%;
+    max-width: 28%;
+  }
+  /* code for all buttons */
+  .button-style:hover {
+    transition: 0.8s;
+    filter: brightness(90%);
+    cursor: pointer;
+  }
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+/* LARGE SCREENS */
+@media screen and (min-width: 768px) {
+  .main-container {
+    padding: 0 20% 0 20%;
+    min-width: 800px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 2000px) {
+  .main-container {
+    padding: 0 25% 0 25%;
+    min-width: 800px;
+  }
+}/*# sourceMappingURL=index.css.map */

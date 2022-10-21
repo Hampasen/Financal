@@ -1,0 +1,61 @@
+@use "../abstracts/variables" as *;
+
+
+/* Code for NAV */
+.page-nav{
+
+    .nav-list{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        li{
+            width: calc(100% / 2);
+            text-align: center;
+            a{
+                padding: 1.5em 0 1.5em 0;
+                display: block;
+                white-space: nowrap;
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 1.2rem;
+                font-family: 'Fira Sans', sans-serif;
+                color: $lightgrey-clr;
+            }
+        }
+        li:active{
+            background-color: rgb(230, 230, 230);
+            color: rgb(46, 46, 46);
+        }
+    }
+}
+/* LARGE SCREENS */
+@media screen and (min-width: 768px){
+    .page-nav{
+
+        margin: 0 auto;
+        width: 75%;
+
+        .nav-list{
+
+            flex-wrap: nowrap;
+            li{
+                width: calc(100% / 4);
+            }
+            li:hover{
+                background-color: rgb(238, 238, 238);
+                transition: .8s;
+                a{
+                    color: rgb(0, 0, 0);
+                }
+            }
+            li:active{
+                filter: brightness(80%);
+             }
+
+        }
+
+    }
+
+
+}

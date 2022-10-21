@@ -1,0 +1,26 @@
+@use "../layout/header";
+@use "../layout/navbar";
+@use "../layout/main-section";
+@use "../layout/infographic-table";
+@use "../layout/footer";
+@use "../components/buttons";
+@use "../abstracts/variables" as *;
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+/* LARGE SCREENS */
+@media screen and (min-width: 768px){
+     .main-container{
+         padding: 0 20% 0 20%;
+         min-width: 800px;
+     }
+     @media screen and (min-width: 2000px){
+        .main-container{
+            padding: 0 25% 0 25%;
+            min-width: 800px;
+        }
+    }
+}
+

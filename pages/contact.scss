@@ -1,0 +1,29 @@
+@use "../layout/Contact-page/contact-main";
+@use "../layout/Contact-page/contact-footer";
+@use "../layout/Contact-page/contact-header";
+@use "../layout/navbar";
+@use "../components/contact-buttons";
+@use "../layout/Contact-page/contact-form";
+@use "../components/buttons";
+@use "../abstracts/variables" as *;
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+/* LARGE SCREENS */
+@media screen and (min-width: 768px){
+     .main-contact-container{
+        padding: 0 20% 0 20%;
+        min-width: 800px;
+     }
+     @media screen and (min-width: 2000px){
+        .main-container{
+            padding: 0 25% 0 25%;
+            min-width: 800px;
+        }
+    }
+     
+}
+
+
