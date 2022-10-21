@@ -24,6 +24,7 @@
     <title>We've got you covered! - Insurance - contact</title>
   </head>
   <body>
+    <!-- HTML for Header -->
     <div class="main-contact-container">
       <header class="page-header">
         <h1>Oh hello there!</h1>
@@ -33,9 +34,8 @@
           alt="Picture of a man and a baby."
         />
       </header>
+      <!-- HTML for nav -->
       <nav class="page-nav">
-        <a name="form"></a>
-        <!-- länk som tar en tillbaka till "form" när man trycker på knappen "send message"-->
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="#">Our offer</a></li>
@@ -43,7 +43,10 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
+      <!-- HTML for the Form -->
       <form class="page-form">
+        <!-- tag for the form-->
+        <a name="form" rel="nofollow"></a>
         <h2>Whats on your mind?</h2>
         <div class="form-wrapper">
           <p>Your e-mail</p>
@@ -59,10 +62,12 @@
               required
             ></textarea>
           </div>
+          <!-- Form submit button -->
           <div class="btn-container">
             <button class="button-style contact-btn" type="submit">
-              <a href="#form">SEND MESSAGE</a>
-              <!-- länk som tar en tillbaka till "form" när man trycker på knappen "send message"-->
+              SEND MESSAGE
+              <!-- Link which takes you back to the top when "send message" is clicked, this makes you stay at the form when message is sent.-->
+              <a href="#form" rel="nofollow"></a>
             </button>
           </div>
         </div>
@@ -71,7 +76,7 @@
         <section class="footer-img">
           <img
             class="img-location"
-            src="assets/swe-maps3.png"
+            src="assets/swe-maps3.webp"
             alt="map of location"
           />
         </section>
